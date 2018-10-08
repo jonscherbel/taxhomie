@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicon.ico">
+
+        <meta name="description" content="Tax Homie is an easy, secure, and efficient way to do your taxes. Simply take pictures of tax documents and send them to a CPA professional to file your tax return." />
+        <meta name="keywords" content="simple tax app, CPA prepared tax return, easiest way to do taxes" />
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <title>Tax Homie | Tax Documents</title>
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="col-xs-2 text-left">
+                    <div class="dropdown">
+                        <button class="navbar-center-vertical btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="generalinfo.html">General Info</a></li>
+                            <li><a href="#">Form 2</a></li>
+                            <li><a href="taxdocs.html">Tax Documents</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-8 text-center">
+                    <img src="img/SmallLogo.jpg" alt="Logo" height="50"/>
+                </div>
+                <div class="col-xs-2 text-right">
+                    <button type="button" class="navbar-center-vertical btn btn-primary">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Added Docs-->
+        <div class="container">
+            <h2 class="text-center">Added Docs</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Document</th>
+                        <th class="text-center">Add</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>Driver's License</td>
+                        <td class="text-center">Picture</td>
+                        <td>
+                            <a href="#" id="" class="btn btn-primary disabled">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>W-2</td>
+                        <td class="text-center">Upload</td>
+                        <td>
+                            <a href="#" id="" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="warning">
+                        <td>1098-T</td>
+                        <td class="text-center">
+                            <a href="#" id="" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-camera"></span>
+                            </a>
+                            &ensp;
+                            <a href="#" id="" class="btn btn-default">
+                                Upload
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" id="" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Tax Documents-->
+        <div class="container">
+            <h2 class="text-center">Tax Documents</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Add</th>
+                        <th>Document</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" id="" class="btn btn-success">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#W2Modal">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </button>
+                            W-2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" id="" class="btn btn-success">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#1098TModal">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </button>
+                            1098-T
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" id="" class="btn btn-success">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#1099INTModal">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </button>
+                            1099-INT
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="col-xs-2 text-left">
+                    <a href="generalinfo.html" class="navbar-center-vertical btn btn-primary">
+                        <span class="glyphicon glyphicon-arrow-left"></span> Back
+                    </a>
+                </div>
+                <div class="col-xs-8 text-center">
+                    <h3>Tax Docs</h3>
+                </div>
+                <div class="col-xs-2 text-right">
+                    <a href="#" class="navbar-center-vertical btn btn-primary disabled">
+                        Next <span class="glyphicon glyphicon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Scripts-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/index.js"></script>
+        <script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-rrc-xRhsm8q87ggf9Dz6LiqTkg";g.src = "//yelp.com/biz_badge_js/en_US/rrc/xRhsm8q87ggf9Dz6LiqTkg.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
+
+    </body>
+</html>

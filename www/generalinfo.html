@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicon.ico">
+
+        <meta name="description" content="Tax Homie is an easy, secure, and efficient way to do your taxes. Simply take pictures of tax documents and send them to a CPA professional to file your tax return." />
+        <meta name="keywords" content="simple tax app, CPA prepared tax return, easiest way to do taxes" />
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <title>Tax Homie | General Info</title>
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="col-xs-2 text-left">
+                    <div class="dropdown">
+                        <button class="navbar-center-vertical btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="generalinfo.html">General Info</a></li>
+                            <li><a href="#">Form 2</a></li>
+                            <li><a href="taxdocs.html">Tax Documents</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-8 text-center">
+                    <img src="img/logo.jpg" alt="Logo" height="50"/>
+                </div>
+                <div class="col-xs-2 text-right">
+                    <button type="button" class="navbar-center-vertical btn btn-danger">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--General Info Form-->
+        <div class="container">
+            <h2 class="text-center">Primary Taxpayer</h2>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="firstname1" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname1" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname1" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lastname1" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ssn1" class="col-sm-2 control-label">Social Security Number</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="ssn1" placeholder="Social Security #">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate1" class="col-sm-2 control-label">Date of Birth</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="birthdate1" placeholder="mm/dd/yyyy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="filingstatus" class="col-sm-2 control-label">Filing Status</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="filingstatus">
+                            <option>Single</option>
+                            <option>Married Filing Jointly</option>
+                            <option>Married Filing Separately</option>
+                            <option>Head of Household</option>
+                            <option>Qualifying Widow(er)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--Secondary Taxpayer-->
+                <div id="secondarytaxpayerinfo">
+                    <h2 class="text-center">Secondary Taxpayer</h2>
+                    <div class="form-group">
+                        <label for="firstname2" class="col-sm-2 control-label">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="firstname2" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname2" class="col-sm-2 control-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lastname2" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ssn2" class="col-sm-2 control-label">Social Security Number</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="ssn2" placeholder="Social Security #">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate2" class="col-sm-2 control-label">Date of Birth</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="birthdate2">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Mailing address-->
+                <h2 class="text-center">Mailing Address</h2>
+                <div class="form-group">
+                    <label for="street1" class="col-sm-2 control-label">Street</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="street1" placeholder="Street">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="apt1" class="col-sm-2 control-label">Apt #</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="apt1" placeholder="Apt #">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city1" class="col-sm-2 control-label">City</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="city1" placeholder="City">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state1" class="col-sm-2 control-label">State</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="state1">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AR">AR</option>  
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>  
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>  
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>  
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>          
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>  
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>   
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="zipcode1" class="col-sm-2 control-label">Zip Code</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="zipcode1" placeholder="Zip Code">
+                    </div>
+                </div>
+
+                <!--Other Info-->
+                <h2 class="text-center">Other Info</h2>
+                <div class="form-group">
+                    <label for="stateresidency" class="col-sm-2 control-label">State Residency</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="stateresidency">
+                            <option>Full year resident of this state</option>
+                            <option>Full year resident of another state</option>
+                            <option>Part year resident of this state</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!--Only show if "another state" option selected-->
+                <div id="whichstate">
+                    <div class="form-group">
+                        <label for="state2" class="col-sm-offset-2 col-sm-2 control-label">Which State?</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="state2">
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AR">AR</option>  
+                                <option value="AZ">AZ</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DC">DC</option>
+                                <option value="DE">DE</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="IA">IA</option>  
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="MA">MA</option>
+                                <option value="MD">MD</option>
+                                <option value="ME">ME</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MO">MO</option>  
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="NC">NC</option>  
+                                <option value="NE">NE</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>          
+                                <option value="NV">NV</option>
+                                <option value="NY">NY</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WI">WI</option>  
+                                <option value="WV">WV</option>
+                                <option value="WY">WY</option>
+                            </select>   
+                        </div>
+                    </div>
+                </div>
+
+                <!--Only show if "part year" is selected-->
+                <div id="partyear">
+                    <div class="form-group">
+                        <label for="state3" class="col-sm-offset-2 col-sm-2 control-label">Other State</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" id="state3">
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AR">AR</option>  
+                                <option value="AZ">AZ</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DC">DC</option>
+                                <option value="DE">DE</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="IA">IA</option>  
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="MA">MA</option>
+                                <option value="MD">MD</option>
+                                <option value="ME">ME</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MO">MO</option>  
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="NC">NC</option>  
+                                <option value="NE">NE</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>          
+                                <option value="NV">NV</option>
+                                <option value="NY">NY</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WI">WI</option>  
+                                <option value="WV">WV</option>
+                                <option value="WY">WY</option>
+                            </select>   
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="datefrom1" class="col-sm-offset-2 col-sm-2 control-label">From</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control" id="datefrom1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateto1" class="col-sm-offset-2 col-sm-2 control-label text-center">To</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control" id="dateto1">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Check all that apply-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Check all that apply:</label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="blindbox">
+                        Taxpayer or spouse is blind
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="deceasedbox">
+                        Taxpayer or spouse is deceased
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="campaignbox">
+                        Contribute $3 to the Presidential Election Campaign Fund
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="disabledbox">
+                        Taxpayer or spouse is disabled
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="mobilephone1" class="col-sm-2 control-label">Mobile Phone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="mobilephone1" placeholder="Optional for text notifications">
+                        <p class="help-block">*Standard data rates apply</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email1" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email1" placeholder="Email">
+                        <p class="help-block">For completed tax return and signature pages</p>
+                    </div>
+                </div>
+
+
+
+                <!--<div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>-->
+
+            </form><!--General Info-->
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="col-xs-2 text-left">
+                    <a href="#" class="navbar-center-vertical btn btn-primary disabled">
+                        <span class="glyphicon glyphicon-arrow-left"></span> Back
+                    </a>
+                </div>
+                <div class="col-xs-8 text-center">
+                    <h3>General Info</h3>
+                </div>
+                <div class="col-xs-2 text-right">
+                    <a href="taxdocs.html" class="navbar-center-vertical btn btn-danger">
+                        Next <span class="glyphicon glyphicon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Scripts-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/index.js"></script>
+        <script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-rrc-xRhsm8q87ggf9Dz6LiqTkg";g.src = "//yelp.com/biz_badge_js/en_US/rrc/xRhsm8q87ggf9Dz6LiqTkg.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
+
+    </body>
+</html>
