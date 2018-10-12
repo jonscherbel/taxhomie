@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicon.ico">
+
+        <meta name="description" content="Tax Homie is an easy, secure, and efficient way to do your taxes. Simply take pictures of tax documents and send them to a CPA professional to file your tax return." />
+        <meta name="keywords" content="simple tax app, CPA prepared tax return, easiest way to do taxes" />
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <title>Tax Homie | General Info</title>
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="col-xs-3 text-left">
+                    <div class="dropdown">
+                        <button class="navbar-center-vertical btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="generalinfo.html">General Info</a></li>
+                            <li><a href="#">Form 2</a></li>
+                            <li><a href="taxdocs.html">Tax Documents</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 text-center">
+                    <img src="img/logo.jpg" alt="Logo" height="50"/>
+                </div>
+                <div class="col-xs-3 text-right">
+                    <button type="button" class="navbar-center-vertical btn btn-danger">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <br>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="refundoptions" class="col-sm-2 control-label">Refund Options</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="refundoptions">
+                            <option>Check by Mail</option>
+                            <option>Direct Deposit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="irspin" class="col-sm-2 control-label">IRS Identity Protection PIN</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="irspin" placeholder="######">
+                        <p class="help-block">Optional</p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="firstname2" class="col-sm-2 control-label">Did you have health insurance coverage in 2018?</label>
+                    <div class="col-sm-10">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+                                No or Partial year
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cpanotes" class="col-sm-2 control-label">Notes to CPA</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="cpanotes" rows="5" placeholder="Notes"></textarea>
+                    </div>
+                </div>
+
+                <!--Services-->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Services Summary:</label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label class="active">
+                        <input type="checkbox" value="flatfeebox" checked="checked" disabled>
+                        $79 - Flat standard cost
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="addstatebox">
+                        $35 - Additional State Return
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="educationbox">
+                        $35 - Education Forms and Credits
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="itemizebox">
+                        $35 - Itemized Deductions
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="businessbox">
+                        $50 - Business
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="rentalbox">
+                        $50 - Rental
+                    </label>
+                </div>
+                <div class="checkbox col-xs-offset-2">
+                    <label>
+                        <input type="checkbox" value="cpacallbox">
+                        $35 - Call from CPA
+                    </label>
+                </div>
+                <br><br><br><br><br><br><br><br><br>
+                <div class="form-group">
+                    <label for="mobilephone1" class="col-sm-2 control-label">Mobile Phone</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="mobilephone1" placeholder="Optional for text notifications">
+                        <p class="help-block">*Standard data rates apply</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email1" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email1" placeholder="Email">
+                        <p class="help-block">For completed tax return and signature pages</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                </div>
+                <br><br>
+
+            </form>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="col-xs-3 text-center">
+                    <a href="#" class="navbar-center-vertical btn btn-primary disabled">
+                        <span class="glyphicon glyphicon-arrow-left"></span> Back
+                    </a>
+                </div>
+                <div class="col-xs-6 text-center">
+                    <h4>Refund & Filing</h4>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="taxdocs.html" class="navbar-center-vertical btn btn-danger">
+                        Next <span class="glyphicon glyphicon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Scripts-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/index.js"></script>
+        <script>(function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-rrc-xRhsm8q87ggf9Dz6LiqTkg";g.src = "//yelp.com/biz_badge_js/en_US/rrc/xRhsm8q87ggf9Dz6LiqTkg.js";s.parentNode.insertBefore(g, s);}(document, 'script'));</script>
+
+    </body>
+</html>
